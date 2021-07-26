@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700&amp;display=swap">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,latin-ext,greek-ext,vietnamese&amp;display=swap">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,latin-ext,greek-ext,vietnamese&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
@@ -20,6 +24,9 @@
     <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
     <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/leaflet/leaflet.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
@@ -30,33 +37,37 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background: rgb(17,28,41);">
-        <div class="container"><a class="navbar-brand" href="#"
-                style="font-family: 'Open Sans', sans-serif;color: #ffffff;"><img src="assets/img/Logo.svg"
-                    style="width: 140px;"></a><button data-bs-toggle="collapse" class="navbar-toggler"
-                data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span
-                    class="navbar-toggler-icon"></span></button>
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg navigation-clean-button bg-first">
+        <div class="container">
+            <a class="navbar-brand text-white" href="./index.html">
+                <img src="assets/img/Logo.svg" width="140px">
+            </a>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon btn-close-white"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#"
-                            style="font-family: 'Open Sans', sans-serif;color: #ffffff;font-size: 16px;">Buat
-                            Informasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"
-                            style="font-family: 'Open Sans', sans-serif;color: #ffffff;font-size: 16px;">Cari
-                            Informasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"
-                            style="font-family: 'Open Sans', sans-serif;color: #ffffff;font-size: 16px;">Penangkaran</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./buat.html">Buat Informasi</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#"
-                            style="font-family: 'Open Sans', sans-serif;color: #ffffff;font-size: 16px;">Tentang</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./pencarian.html">Cari Informasi</a>
                     </li>
-                </ul><span class="navbar-text actions"> <a class="login" href="#"
-                        style="font-family: 'Open Sans', sans-serif;color: rgb(255,255,255);font-size: 16px;">Daftar</a><a
-                        class="login" href="#"
-                        style="font-family: 'Open Sans', sans-serif;color: rgb(255,255,255);font-weight: 700;font-size: 16px;">Masuk</a></span>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./penangkaran.html">Penangkaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./index.html#tentang">Tentang</a>
+                    </li>
+                </ul>
+                <span class="navbar-text actions">
+                    <a class="btn login text-white bg-second font-16 solid fw-bold" href="./login.html">Masuk</a>
+                </span>
             </div>
         </div>
     </nav>
+
     <div id="wrapper">
         <div id="sidebar-wrapper" style="width: 300px;background: rgb(255,255,255);">
             <div class="col text-center">
@@ -92,15 +103,19 @@
                         Kucing Oren</a></div>
             </div>
         </div>
-        <div class="page-content-wrapper" style="width: 1050px;margin-left: 50px;"><iframe allowfullscreen=""
-                frameborder="0" src="https://cdn.bootstrapstudio.io/placeholders/map.html" width="100%"
-                height="400"></iframe></div>
+        <div class="page-content-wrapper" style="width: 100%;height:max-content;margin-left: 50px;">
+            <div id="mapid"></div>
+        </div>
     </div>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/leaflet/leaflet.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
     <script src="assets/js/Sidebar-Menu.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
