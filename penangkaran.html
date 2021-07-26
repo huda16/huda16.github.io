@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPAnimals</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,latin-ext,greek-ext,vietnamese&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
+    <link rel="stylesheet" href="assets/css/Features-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/leaflet/leaflet.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Menu-1.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Menu.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: #F1F0F0;">
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg navigation-clean-button bg-first">
+        <div class="container">
+            <a class="navbar-brand text-white" href="./index.html">
+                <img src="assets/img/Logo.svg" width="140px">
+            </a>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon btn-close-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./buat.html">Buat Informasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./pencarian.html">Cari Informasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./penangkaran.html">Penangkaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./index.html#tentang">Tentang</a>
+                    </li>
+                </ul>
+                <span class="navbar-text actions">
+                    <a class="btn login text-white bg-second font-16 solid fw-bold" href="./login.html">Masuk</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card" style="margin-top: 20px;">
+            <div class="row" style="padding-right: 40px;padding-left: 40px;padding-top: 36px;padding-bottom: 36px;">
+                <div class="col col-12">
+                    <h1 style="font-weight: 800;color: rgb(0,0,0);font-size: 28px;">
+                        Layanan Penanggulangan Satwa Liar<br></h1>
+                    <p style="margin-top: -20px;color: rgb(0,0,0);font-size: 16px;">
+                        <br>Secara umum, kucing dan anjing yang tidak terurus kesehatannya dapat membawa penyakit
+                        Zoonosis. Sehingga terdapat kemungkinan yang besar masyarakat sekitarnya akan terdampak<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 40px;padding-right: 40px;padding-top: 0px;padding-bottom: 36px;">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div class="col col-1">
+                            <div style="height: 100%;width: 4px;background: #34c3e3;"></div>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-weight: 600;color: rgb(0,0,0);font-size: 24px;">
+                                Rumah Hewan<br></h1>
+                            <p style="margin-top: 0px;color: rgb(0,0,0);font-size: 14px;margin-bottom: 0px;">
+                                Jalan Cibiru No. 9999, Kabupaten Bandung. 40999<br></p>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col col-4 text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Hubungi</button>
+                                </div>
+                                <div class="col text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Lihat
+                                        Lokasi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div class="col col-1">
+                            <div style="height: 100%;width: 4px;background: #34c3e3;"></div>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-weight: 600;color: rgb(0,0,0);font-size: 24px;">
+                                Rumah Hewan<br></h1>
+                            <p style="margin-top: 0px;color: rgb(0,0,0);font-size: 14px;margin-bottom: 0px;">
+                                Jalan Cibiru No. 9999, Kabupaten Bandung. 40999<br></p>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col col-4 text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Hubungi</button>
+                                </div>
+                                <div class="col text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Lihat
+                                        Lokasi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div class="col col-1">
+                            <div style="height: 100%;width: 4px;background: #34c3e3;"></div>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-weight: 600;color: rgb(0,0,0);font-size: 24px;">
+                                Rumah Hewan<br></h1>
+                            <p style="margin-top: 0px;color: rgb(0,0,0);font-size: 14px;margin-bottom: 0px;">
+                                Jalan Cibiru No. 9999, Kabupaten Bandung. 40999<br></p>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col col-4 text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Hubungi</button>
+                                </div>
+                                <div class="col text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Lihat
+                                        Lokasi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 20px;">
+            <div class="row" style="padding-right: 40px;padding-left: 40px;padding-top: 36px;padding-bottom: 36px;">
+                <div class="col col-12">
+                    <h1 style="font-weight: 800;color: rgb(0,0,0);font-size: 28px;">
+                        Rumah Hewan<br></h1>
+                    <p style="margin-top: -20px;color: rgb(0,0,0);font-size: 16px;">
+                        <br>Secara umum, kucing dan anjing yang tidak terurus kesehatannya dapat membawa penyakit
+                        Zoonosis. Sehingga terdapat kemungkinan yang besar masyarakat sekitarnya akan terdampak<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 40px;padding-right: 40px;padding-top: 0px;padding-bottom: 36px;">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div class="col col-1">
+                            <div style="height: 100%;width: 4px;background: #34c3e3;"></div>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-weight: 600;color: rgb(0,0,0);font-size: 24px;">
+                                Rumah Hewan<br></h1>
+                            <p style="margin-top: 0px;color: rgb(0,0,0);font-size: 14px;margin-bottom: 0px;">
+                                Jalan Cibiru No. 9999, Kabupaten Bandung. 40999<br></p>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col col-4 text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Hubungi</button>
+                                </div>
+                                <div class="col text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Lihat
+                                        Lokasi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div class="col col-1">
+                            <div style="height: 100%;width: 4px;background: #34c3e3;"></div>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-weight: 600;color: rgb(0,0,0);font-size: 24px;">
+                                Rumah Hewan<br></h1>
+                            <p style="margin-top: 0px;color: rgb(0,0,0);font-size: 14px;margin-bottom: 0px;">
+                                Jalan Cibiru No. 9999, Kabupaten Bandung. 40999<br></p>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col col-4 text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Hubungi</button>
+                                </div>
+                                <div class="col text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Lihat
+                                        Lokasi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div class="col col-1">
+                            <div style="height: 100%;width: 4px;background: #34c3e3;"></div>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-weight: 600;color: rgb(0,0,0);font-size: 24px;">
+                                Rumah Hewan<br></h1>
+                            <p style="margin-top: 0px;color: rgb(0,0,0);font-size: 14px;margin-bottom: 0px;">
+                                Jalan Cibiru No. 9999, Kabupaten Bandung. 40999<br></p>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col col-4 text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Hubungi</button>
+                                </div>
+                                <div class="col text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Lihat
+                                        Lokasi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 40px;padding-right: 40px;padding-top: 0px;padding-bottom: 36px;">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div class="col col-1">
+                            <div style="height: 100%;width: 4px;background: #34c3e3;"></div>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-weight: 600;color: rgb(0,0,0);font-size: 24px;">
+                                Rumah Hewan<br></h1>
+                            <p style="margin-top: 0px;color: rgb(0,0,0);font-size: 14px;margin-bottom: 0px;">
+                                Jalan Cibiru No. 9999, Kabupaten Bandung. 40999<br></p>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col col-4 text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Hubungi</button>
+                                </div>
+                                <div class="col text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Lihat
+                                        Lokasi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div class="col col-1">
+                            <div style="height: 100%;width: 4px;background: #34c3e3;"></div>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-weight: 600;color: rgb(0,0,0);font-size: 24px;">
+                                Rumah Hewan<br></h1>
+                            <p style="margin-top: 0px;color: rgb(0,0,0);font-size: 14px;margin-bottom: 0px;">
+                                Jalan Cibiru No. 9999, Kabupaten Bandung. 40999<br></p>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col col-4 text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Hubungi</button>
+                                </div>
+                                <div class="col text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Lihat
+                                        Lokasi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div class="col col-1">
+                            <div style="height: 100%;width: 4px;background: #34c3e3;"></div>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-weight: 600;color: rgb(0,0,0);font-size: 24px;">
+                                Rumah Hewan<br></h1>
+                            <p style="margin-top: 0px;color: rgb(0,0,0);font-size: 14px;margin-bottom: 0px;">
+                                Jalan Cibiru No. 9999, Kabupaten Bandung. 40999<br></p>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col col-4 text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Hubungi</button>
+                                </div>
+                                <div class="col text-center"><button class="btn btn-primary d-block"
+                                        data-bss-hover-animate="pulse" type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;border-width: 0px;font-size: 14px;">Lihat
+                                        Lokasi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 20px;">
+            <div class="row" style="padding-right: 40px;padding-left: 40px;padding-top: 36px;padding-bottom: 36px;">
+                <div class="col col-12">
+                    <h1 style="font-weight: 800;color: rgb(0,0,0);font-size: 28px;">
+                        Peta Lokasi<br></h1>
+                    <p style="margin-top: -20px;color: rgb(0,0,0);font-size: 16px;">
+                        <br>Secara umum, kucing dan anjing yang tidak terurus kesehatannya dapat membawa penyakit
+                        Zoonosis. Sehingga terdapat kemungkinan yang besar masyarakat sekitarnya akan terdampak<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 40px;padding-right: 40px;padding-top: 0px;padding-bottom: 36px;">
+                <div class="col">
+                    <div id="mapid"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin-top: 20px;">
+            <div class="row" style="padding-right: 40px;padding-left: 40px;padding-top: 36px;padding-bottom: 36px;">
+                <div class="col col-12">
+                    <h1 style="font-weight: 800;color: rgb(0,0,0);font-size: 28px;">
+                        Ingin Menambah Informasi Penangkaran ?<br></h1>
+                    <p style="margin-top: -20px;color: rgb(0,0,0);font-size: 16px;">
+                        <br>Secara umum, kucing dan anjing yang tidak terurus kesehatannya dapat membawa penyakit
+                        Zoonosis. Sehingga terdapat kemungkinan yang besar masyarakat sekitarnya akan terdampak<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="padding-right: 40px;padding-left: 40px;padding-top: 0px;padding-bottom: 36px;">
+                <div class="col text-center"><span style="font-size: 20px;">&nbsp;<i class="fas fa-phone-alt"
+                            style="color: #34c3e3;"></i>&nbsp; +(62) 89898989</span></div>
+                <div class="col text-center"><span style="font-size: 20px;">&nbsp;<i class="fas fa-mail-bulk"
+                            style="color: #34c3e3;"></i>&nbsp; aplikasi@aplikasi.co</span></div>
+                <div class="col text-center"><span style="font-size: 20px;">&nbsp;<i class="fas fa-phone-alt"
+                            style="color: #34c3e3;"></i>&nbsp; (022) 1212121</span></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-clean">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Fitur dan Layanan</h3>
+                    <ul>
+                        <li><a href="#" style="color: rgb(0,0,0);">Pemetaan Hewan</a></li>
+                        <li><a href="#" style="color: rgb(0,0,0);">Pencarian Hewan</a></li>
+                        <li><a href="#" style="color: rgb(0,0,0);">Daftar Hewan</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#" style="color: rgb(0,0,0);">Aplikasi</a></li>
+                        <li><a href="#" style="color: rgb(0,0,0);">Kelompok</a></li>
+                        <li><a href="#" style="color: rgb(0,0,0);">Animalia</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="#"><i
+                            class="icon ion-social-instagram"></i></a>
+                    <p class="copyright">KTG7 ASHING © 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/leaflet/leaflet.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
+    <script src="assets/js/Sidebar-Menu.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
