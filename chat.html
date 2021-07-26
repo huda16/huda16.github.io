@@ -30,123 +30,138 @@
 </head>
 
 <body style="background: rgb(247,247,247);">
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background: rgb(17,28,41);">
-        <div class="container"><a class="navbar-brand" href="#"
-                style="font-family: 'Open Sans', sans-serif;color: #ffffff;"><img src="assets/img/Logo.svg"
-                    style="width: 140px;"></a><button data-bs-toggle="collapse" class="navbar-toggler"
-                data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span
-                    class="navbar-toggler-icon"></span></button>
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg navigation-clean-button bg-first">
+        <div class="container">
+            <a class="navbar-brand text-white" href="./index.html">
+                <img src="assets/img/Logo.svg" width="140px">
+            </a>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon btn-close-white"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#"
-                            style="font-family: 'Open Sans', sans-serif;color: #ffffff;font-size: 16px;">Buat
-                            Informasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"
-                            style="font-family: 'Open Sans', sans-serif;color: #ffffff;font-size: 16px;">Cari
-                            Informasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"
-                            style="font-family: 'Open Sans', sans-serif;color: #ffffff;font-size: 16px;">Penangkaran</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./buat.html">Buat Informasi</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#"
-                            style="font-family: 'Open Sans', sans-serif;color: #ffffff;font-size: 16px;">Tentang</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./pencarian.html">Cari Informasi</a>
                     </li>
-                </ul><span class="navbar-text actions"> <a class="login" href="#"
-                        style="font-family: 'Open Sans', sans-serif;color: rgb(255,255,255);font-size: 16px;">Daftar</a><a
-                        class="login" href="#"
-                        style="font-family: 'Open Sans', sans-serif;color: rgb(255,255,255);font-weight: 700;font-size: 16px;">Masuk</a></span>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./penangkaran.html">Penangkaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-16" href="./index.html#tentang">Tentang</a>
+                    </li>
+                </ul>
+                <span class="navbar-text actions nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="me-2 text-white">Douglas McGee</span>
+                        <img class="img-thumbnail rounded-circle d-none d-lg-inline small"
+                            src="assets/img/undraw_profile.svg" width="32px">
+                    </a>
+                    <!-- Dropdown - User Information -->
+                    <div class="dropdown-menu shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="./profil.html">
+                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Profilku
+                        </a>
+                        <a class="dropdown-item" href="./detail.html">
+                            <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Daftar Informasi
+                        </a>
+                        <a class="dropdown-item" href="./chat.html">
+                            <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Pesan
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Logout
+                        </a>
+                    </div>
+                </span>
             </div>
         </div>
     </nav>
-    <div id="wrapper">
-        <div id="sidebar-wrapper"
-            style="background: #111c29;position: absolute;font-family: 'Open Sans', sans-serif;margin-top: 0px;">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"> <a href="#"
-                        style="font-family: 'Open Sans', sans-serif;font-weight: 700;color: rgb(255,255,255);font-size: 20px;">Akun</a>
-                </li>
-                <li> <a href="#" style="font-family: 'Open Sans', sans-serif;color: rgb(255,255,255);">Profilku</a></li>
-                <li> <a href="#" style="font-family: 'Open Sans', sans-serif;color: rgb(255,255,255);">Daftar
-                        Informasi</a></li>
-                <li> <a href="#" style="font-family: 'Open Sans', sans-serif;color: rgb(255,255,255);">Pesan</a></li>
-                <li> <a href="#" style="font-family: 'Open Sans', sans-serif;color: rgb(255,255,255);">Keluar</a></li>
-            </ul>
-        </div>
-        <div class="page-content-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-4">
-                        <div class="card" style="margin-top: 20px;">
-                            <div class="row"
-                                style="padding-right: 40px;padding-left: 40px;padding-top: 36px;padding-bottom: 36px;">
-                                <div class="col col-12">
-                                    <h1
-                                        style="font-family: 'Open Sans', sans-serif;font-weight: 800;color: rgb(0,0,0);font-size: 20px;margin-bottom: 30px;">
-                                        Daftar Pengguna<br></h1><a class="list-group-item list-group-item-action"
-                                        href="#"
-                                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;padding-left: 0px;">Ardi
-                                        Hilal Itsna</a><a class="list-group-item list-group-item-action" href="#"
-                                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;padding-left: 0px;">huda16</a><a
-                                        class="list-group-item list-group-item-action" href="#"
-                                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;padding-left: 0px;">satrioxXx</a><a
-                                        class="list-group-item list-group-item-action" href="#"
-                                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;padding-left: 0px;">pecintaHewan</a>
-                                </div>
-                            </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="card" style="margin-top: 20px;">
+                    <div class="row"
+                        style="padding-right: 40px;padding-left: 40px;padding-top: 36px;padding-bottom: 36px;">
+                        <div class="col col-12">
+                            <h1
+                                style="font-family: 'Open Sans', sans-serif;font-weight: 800;color: rgb(0,0,0);font-size: 20px;margin-bottom: 30px;">
+                                Daftar Pengguna<br></h1><a class="list-group-item list-group-item-action" href="#"
+                                style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;padding-left: 0px;">Ardi
+                                Hilal Itsna</a><a class="list-group-item list-group-item-action" href="#"
+                                style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;padding-left: 0px;">huda16</a><a
+                                class="list-group-item list-group-item-action" href="#"
+                                style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;padding-left: 0px;">satrioxXx</a><a
+                                class="list-group-item list-group-item-action" href="#"
+                                style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;padding-left: 0px;">pecintaHewan</a>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card" style="margin-top: 20px;">
-                            <div class="row"
-                                style="padding-right: 40px;padding-left: 40px;padding-top: 36px;padding-bottom: 36px;">
-                                <div class="col col-12" style="margin-bottom: 30px;">
-                                    <h1
-                                        style="font-family: 'Open Sans', sans-serif;font-weight: 800;color: rgb(0,0,0);font-size: 20px;margin-bottom: 6px;">
-                                        Ardi Hilal Itsna<br></h1><span
-                                        style="font-family: 'Open Sans', sans-serif;font-size: 14;">&nbsp;<i
-                                            class="fas fa-phone-alt" style="color: #34c3e3;"></i>&nbsp; (+62)
-                                        898989898</span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="card" style="margin-top: 20px;">
+                    <div class="row"
+                        style="padding-right: 40px;padding-left: 40px;padding-top: 36px;padding-bottom: 36px;">
+                        <div class="col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 30px;">
+                            <h1
+                                style="font-family: 'Open Sans', sans-serif;font-weight: 800;color: rgb(0,0,0);font-size: 20px;margin-bottom: 6px;">
+                                Ardi Hilal Itsna<br></h1><span
+                                style="font-family: 'Open Sans', sans-serif;font-size: 14;">&nbsp;<i
+                                    class="fas fa-phone-alt" style="color: #34c3e3;"></i>&nbsp; (+62)
+                                898989898</span>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="card" style="margin-bottom: 0px;border-width: 0px;">
+                                <div class="card-body"
+                                    style="font-family: 'Open Sans', sans-serif;background: #34c3e3;margin-left: 100px;border-radius: 12px;">
+                                    <p class="card-text" style="color: rgb(255,255,255);font-size: 14px;">Oke
+                                        bisa janjian dimana ? Kebetulan saya lokasi di daerah Bandung selatan,
+                                        mungkin via ojek online juga bisa</p>
                                 </div>
-                                <div class="col col-12">
-                                    <div class="card" style="margin-bottom: 0px;border-width: 0px;">
-                                        <div class="card-body"
-                                            style="font-family: 'Open Sans', sans-serif;background: #34c3e3;margin-left: 100px;border-radius: 12px;">
-                                            <p class="card-text" style="color: rgb(255,255,255);font-size: 14px;">Oke
-                                                bisa janjian dimana ? Kebetulan saya lokasi di daerah Bandung selatan,
-                                                mungkin via ojek online juga bisa</p>
-                                        </div>
-                                    </div>
-                                    <p class="text-end"
-                                        style="font-family: 'Open Sans', sans-serif;font-size: 12px;margin-left: 0px;margin-top: 10px;margin-right: 10px;">
-                                        19 Juli 2021 - 10:38</p>
-                                </div>
-                                <div class="col col-12">
-                                    <div class="card" style="margin-bottom: 0px;border-width: 0px;">
-                                        <div class="card-body"
-                                            style="font-family: 'Open Sans', sans-serif;background: #f8f8f8;margin-right: 100px;border-radius: 12px;">
-                                            <p class="card-text" style="font-size: 14px;">Iya benar...</p>
-                                        </div>
-                                    </div>
-                                    <p
-                                        style="font-family: 'Open Sans', sans-serif;font-size: 12px;margin-left: 10px;margin-top: 10px;">
-                                        19 Juli 2021 - 10:38</p>
-                                </div>
-                                <div class="col col-9" style="margin-top: 20px;">
-                                    <form><input class="form-control w-100" type="text"
-                                            style="margin-top: 0px;height: 32px;border-radius: 12px;border-color: rgb(186,186,186);padding-left: 10px;margin-left: 0px;font-family: 'Open Sans', sans-serif;color: rgb(33, 37, 41);width: 350px;font-size: 14px;"
-                                            placeholder="Ketik pesan"></form>
-                                </div>
-                                <div class="col col-3" style="margin-top: 20px;"><button
-                                        class="btn btn-primary d-block w-100" data-bss-hover-animate="pulse"
-                                        type="submit"
-                                        style="background: #34c3e3;border-radius: 16px;font-family: 'Open Sans', sans-serif;font-size: 14px;border-width: 0px;">Kirim
-                                        Pesan</button></div>
                             </div>
+                            <p class="text-end"
+                                style="font-family: 'Open Sans', sans-serif;font-size: 12px;margin-left: 0px;margin-top: 10px;margin-right: 10px;">
+                                19 Juli 2021 - 10:38</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="card" style="margin-bottom: 0px;border-width: 0px;">
+                                <div class="card-body"
+                                    style="font-family: 'Open Sans', sans-serif;background: #f8f8f8;margin-right: 100px;border-radius: 12px;">
+                                    <p class="card-text" style="font-size: 14px;">Iya benar...</p>
+                                </div>
+                            </div>
+                            <p
+                                style="font-family: 'Open Sans', sans-serif;font-size: 12px;margin-left: 10px;margin-top: 10px;">
+                                19 Juli 2021 - 10:38</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 20px;">
+                            <form>
+                                <div class="input-group">
+                                    <input class="form-control" type="text"
+                                        style="margin-top: 0px;height: 32px;border-radius: 12px;border-color: rgb(186,186,186);padding-left: 10px;margin-left: 0px;font-family: 'Open Sans', sans-serif;color: rgb(33, 37, 41);font-size: 14px;"
+                                        placeholder="Ketik pesan">
+                                    <button class="btn btn-primary ms-2 px-3" data-bss-hover-animate="pulse"
+                                        type="submit"
+                                        style="background: #34c3e3;border-radius: 16px;font-size: 14px;border-width: 0px;"><i
+                                            class="fab fa-telegram-plane"></i></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
