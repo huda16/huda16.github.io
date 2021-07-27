@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body class="overflow-hidden">
     <nav class="navbar sticky-top navbar-light navbar-expand-lg navigation-clean-button bg-first">
         <div class="container">
             <a class="navbar-brand text-white" href="./index.html">
@@ -68,43 +68,46 @@
         </div>
     </nav>
 
-    <div id="wrapper">
-        <div id="sidebar-wrapper" style="width: 300px;background: rgb(255,255,255);">
-            <div class="col text-center">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 mt-0 form-buat">
                 <h1
                     style="font-family: 'Open Sans', sans-serif;font-size: 22px;margin-top: 20px;font-weight: 600;margin-left: 0px;">
                     Cari Informasi Hewan</h1>
-            </div>
-            <div class="col">
                 <p
-                    style="margin-top: -10px;font-family: 'Open Sans', sans-serif;color: rgb(0,0,0);font-size: 14px;margin-left: 14px;margin-right: 16px;margin-bottom: 0px;">
+                    style="margin-top: -10px;font-family: 'Open Sans', sans-serif;color: rgb(0,0,0);font-size: 14px;margin-bottom: 0px;">
                     <br>Silakan lakukan pencarian judul yang sesuai dengan memasukan kata kunci pada isian berikut
                     kemudian tekan Enter. Selanjutnya pilih untuk merujuk pada peta digital di samping kanan.
                 </p>
+                <form>
+                    <input class="form-control my-3" type="text"
+                        style="height: 32px;border-radius: 12px;border-color: rgb(186,186,186);font-family: 'Open Sans', sans-serif;"
+                        placeholder="Ketik kata kunci">
+                </form>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
+                        Kucing Oren</a>
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
+                        Kucing Oren</a>
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
+                        Kucing Oren</a>
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
+                        Kucing Oren</a>
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
+                        Kucing Oren</a>
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
+                        Kucing Oren</a>
+                </div>
             </div>
-            <div class="col text-center">
-                <form style="width: 250px;"><input class="form-control" type="text"
-                        style="margin-top: 30px;height: 32px;border-radius: 12px;border-color: rgb(186,186,186);padding-left: 4px;margin-left: 25px;font-family: 'Open Sans', sans-serif;"
-                        placeholder="Ketik kata kunci"></form>
+            <div class="col-sm-12 col-md-12 col-lg-8 m-0 p-0">
+                <div id="mapcari"></div>
             </div>
-            <div class="col" style="margin-top: 30px;">
-                <div class="list-group"><a class="list-group-item list-group-item-action" href="#"
-                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
-                        Kucing Oren</a><a class="list-group-item list-group-item-action" href="#"
-                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
-                        Kucing Oren</a><a class="list-group-item list-group-item-action" href="#"
-                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
-                        Kucing Oren</a><a class="list-group-item list-group-item-action" href="#"
-                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
-                        Kucing Oren</a><a class="list-group-item list-group-item-action" href="#"
-                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
-                        Kucing Oren</a><a class="list-group-item list-group-item-action" href="#"
-                        style="font-family: 'Open Sans', sans-serif;background: rgb(255,255,255);margin-bottom: 0px;border-right-width: 0px;border-left-width: 0px;">Anak
-                        Kucing Oren</a></div>
-            </div>
-        </div>
-        <div class="page-content-wrapper" style="width: 100%;height:max-content;margin-left: 50px;">
-            <div id="mapcari"></div>
         </div>
     </div>
 
