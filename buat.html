@@ -21,8 +21,13 @@
     <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/leaflet/leaflet.css">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css"
+        type="text/css" />
     <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
@@ -32,7 +37,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="overflow-hidden">
+<body>
     <nav class="navbar sticky-top navbar-light navbar-expand-lg navigation-clean-button bg-first">
         <div class="container">
             <a class="navbar-brand text-white" href="./index.html">
@@ -127,18 +132,20 @@
                         <div class="col col-12 text-start">
                             <label class="col-form-label"
                                 style="font-family: 'Open Sans', sans-serif;font-size: 14px;font-weight: 500;">Lokasi</label>
+                            <input class="form-control" type="text" id="lokasi"
+                                style="margin-top: 0px;height: 32px;border-radius: 12px;border-color: rgb(186,186,186);padding-left: 10px;font-family: 'Open Sans', sans-serif;color: rgb(33, 37, 41);font-size: 14px;"
+                                value="">
                             <div class="row">
                                 <div class="col col-6">
                                     <button class="btn btn-primary d-block w-100" data-bss-hover-animate="pulse"
-                                        type="submit"
+                                        type="button" onclick="getLocation('as')"
                                         style="background: #34c3e3;border-radius: 16px;width: 400px;border-width: 0px;border-left-color: rgb(255,255,255);font-size: 14px;">Pilih
                                         Otomatis</button>
                                 </div>
                                 <div class="col col-6">
-                                    <button class="btn btn-primary d-block w-100" data-bss-hover-animate="pulse"
-                                        type="submit"
+                                    <a class="btn btn-primary d-block w-100" data-bss-hover-animate="pulse" href="#maps"
                                         style="background: #ffffff;border-radius: 16px;width: 400px;color: #34c3e3;border-width: 2px;border-color: #34c3e3;border-left-color: #34c3e3;font-weight: bold;font-size: 14px;">Pilih
-                                        Pada Peta</button>
+                                        Pada Peta</a>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +176,7 @@
                     <div class="row" style="width: 400px;margin: 0;height: 76px;"></div>
                 </form>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-8 m-0 p-0">
+            <div class="col-sm-12 col-md-12 col-lg-8 m-0 p-0" id="maps">
                 <div id="mapbuat"></div>
             </div>
         </div>
@@ -177,7 +184,6 @@
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/leaflet/leaflet.js"></script>
-    <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
