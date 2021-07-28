@@ -1,7 +1,7 @@
 mapboxgl.accessToken =
   "pk.eyJ1IjoiaHVkYTE2IiwiYSI6ImNrcmplYTFkeDZ6N3YzMXBhMjM2dGM3ZGoifQ.4e4nl5NnRvPurHhhf_DE5Q";
 
-const map1 = document.querySelector("#map");
+const map1 = document.querySelector("#mapid");
 const map2 = document.querySelector("#mapbuat");
 const map3 = document.querySelector("#mapcari");
 let marker;
